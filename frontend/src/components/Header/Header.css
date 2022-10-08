@@ -1,0 +1,53 @@
+.ModeLogo{height: 4rem;
+    width: 3.5rem;
+margin-left: 1rem;}
+    
+    .toggleDarkHeaderMode{background-color: black;
+    }
+    .header_component{
+        display: flex;
+        align-items: center;
+        flex: 1;
+        justify-content: space-between;
+    }
+    
+    .modeWrapper {
+        display: flex;
+        align-items: center;
+        gap: 20px
+       
+    
+      }
+      .switchContainer {
+       
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      .modeWrapper p {
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .header_button{ font-weight: 600;
+        width: 6rem;
+        padding: 5px;
+        text-align: center;
+        font-size: 18px;
+        height: 3rem;
+        border: transparent;
+        cursor: pointer;
+    margin-right: 1rem;}
+
+    @media screen and (max-width:480px){
+
+      .header_component{flex-direction: column;
+      row-gap: 10px;}
+      .ModeLogo{
+        margin-left: 0;
+        margin-top: 0;
+      }
+      .header_button{
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }

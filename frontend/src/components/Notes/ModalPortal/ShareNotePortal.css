@@ -1,0 +1,35 @@
+.displayedModalPortal{
+    margin: auto;
+    height: 80vh;
+    /* position: fixed;
+      top: 20%; */
+  }
+  #basic label{color: white;
+font-weight: 600;}
+  #basic {width: 40rem;
+padding: 1rem;}
+  .cancelModalPortal{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+  
+  .Modal_Wrapper {
+    background-color: rgba(0, 0, 0, 0.90);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.Input_Error {
+  color: #e50914;
+  text-align: center;
+  width: 100%;
+  height: 1rem;
+}

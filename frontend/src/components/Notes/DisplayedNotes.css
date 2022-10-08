@@ -1,0 +1,330 @@
+.DisplayedItem {
+  height: auto;
+  width: 18rem;
+  min-height: 20rem;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  position: relative;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.titlecontent_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+  padding-bottom: 0.2rem;
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  align-items: center;
+}
+.show {
+  display: none !important;
+}
+.showbox {
+  display: none !important;
+}
+.hide {
+  /* display: block !important; */
+}
+
+.displayedTitle {
+  flex: 1;
+  cursor: pointer;
+  color: inherit;
+  margin-left: 22px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-bottom: 0;overflow-wrap: anywhere;
+}
+/* .displayedInputItem ::placeholder {
+  position: absolute;
+  top: 0;
+} */
+
+#b {
+  position: absolute;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+#b {
+  opacity: 0;
+  transition: opacity 0s 180s;
+}
+#d {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  left: 0;
+  border: 2px solid black;
+  background-color: white;
+  cursor: pointer;
+}
+#c {
+  margin-left: 22px;
+  font-weight: 700;
+  cursor: pointer;
+}
+#a:hover + #b {
+  opacity: 1;
+  transition: 0s;
+}
+
+.displayedTitle:hover + .checkbox1 {
+  /* display: block !important; */
+  height: 1rem;
+  width: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0s;
+  opacity: 0;
+}
+.inputItemDisplay_Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+.filesDocs:hover {
+  color: blue !important;
+}
+
+.fileSize span,
+.fileLink_Wrapper span,
+.fileDescription span {
+  margin-right: 10px;
+  overflow-wrap: anywhere;
+  color: inherit;
+  cursor: pointer;
+}
+
+.inactiveIcon {
+}
+.fileName_wrapper,
+.fileDescription,
+.fileSize {
+  margin-bottom: 0.5rem;
+}
+.fileName_wrapper span {
+  margin-right: 10px;
+  overflow-wrap: anywhere;
+  color: inherit;
+}
+.checkbox1 {
+  opacity: 0;
+  transition: 0s 180s;
+}
+.fileLink_Wrapper a {
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+.titlecontent_wrapper h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+.checkboxsubmit {
+  height: 2rem;
+  width: 0.8rem;
+}
+.inputItemDisplayed {
+  background-color: inherit;
+  outline: none;
+  border: none;
+  flex: 0.8;
+  position: relative;
+}
+.border_note {
+  margin-bottom: 1rem;
+}
+.deletePinIcon_Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.deleteShareIconWrapper{display: flex;
+align-items: center;
+justify-content: center;}
+.shareIcon{margin-right: 5px;
+margin-top: 3px;}
+.deleteIcon:hover,
+.pinIcon:hover {
+  fill: red !important;
+}
+.shareIcon:hover {
+  fill: red !important;
+}
+.pinIcon {
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  transition: all 2s linear;
+}
+.pinDown {
+  -moz-transform: rotate(315deg);
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+  fill: red;
+}
+.abc {
+  fill: red;
+}
+.inactivePin {
+  transform: rotate(45deg);
+}
+.inactivePin:hover {
+  fill: red;
+}
+.textEditor_Icons {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+.richTextSelector_Wrapper {
+  display: flex;
+  position: absolute;
+  top: 0%;
+  margin-top: 2.5rem;
+  row-gap: 2px;
+  border: transparent;
+
+  flex-direction: column;
+}
+.textEditorFont > span {
+  border: 1px solid #f1f1f1;
+  height: 1.5rem;
+  width: 1.5rem;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.texteditor {
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f1f1f1;
+  cursor: pointer;
+}
+.displayedImageItem {
+  height: 20rem;
+  cursor: pointer;
+}
+.textEditorFont {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  margin-top: 2.5rem;
+  gap: 3px;
+}
+.texteditorfontWrapper {
+  position: relative;
+}
+.texteditorcolor {
+  position: relative;
+}
+.displayed_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+  justify-content: center;
+}
+.content {
+  border: none;
+  outline: none;
+  resize: none;
+  flex: 1;
+  background-color: inherit;
+  height: fit-content !important;
+}
+.notedetail{display: flex;
+flex-direction: column; 
+width: 30rem;
+padding: 1rem;
+max-width: 100%;}
+.notedetail h3{
+  font-weight: 700;
+  font-size: 35px;
+  text-align: center;
+ margin-bottom: 0;
+  color: inherit;
+}
+.notedetail span{color: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+}
+.jodit-container {min-height: 40px !important;}
+.DisplayedItem .jodit-status-bar{display: none !important;
+}
+.joditDarkMode .jodit-container{border: none !important;
+ background-color: "rgb(32, 33, 36)";
+border:none !important}
+
+.joditLightMode .jodit-ui-group >span {border: 1px solid #F1F1F1;height: 20px;
+  font-size: 12px;}
+.joditDarkMode .jodit-toolbar__box{background-color: inherit!important}
+.joditDarkMode .jodit-ui-group >span {background-color: #e8eaed;
+height: 20px;
+font-size: 12px;}
+.joditDarkMode .jodit-wysiwyg p, .joditDarkMode .jodit-wysiwyg h1, .joditDarkMode .jodit-wysiwyg h2,.joditDarkMode .jodit-wysiwyg h3,.joditDarkMode .jodit-wysiwyg h4,.joditDarkMode .jodit-wysiwyg h5,.joditDarkMode .jodit-wysiwyg h6, .joditDarkMode .jodit-wysiwyg tr, .joditDarkMode .jodit-wysiwyg td{color:rgb(232, 234, 237) !important;}
+
+.joditLightMode .jodit-container{border: none !important;}
+.joditLightMode .jodit-toolbar__box {
+ background-color: white !important;
+}
+.richTextModeWrapper .jodit-ui-spacer{display: none;}
+.richTextModeWrapper .jodit-ui-separator{display: none;}
+
+ .richTextModeWrapper .jodit-toolbar-editor-collection_mode_horizontal{background-image: none !important;}
+ .richTextModeWrapper .jodit-ui-group .jodit-ui-group_line_true .jodit-ui-group_size_middle{border-bottom:none !important}
+
+
+ .richTextModeWrapper .jodit-container .jodit-add-new-line {display: none !important;}
+
+  .jodit-toolbar-button_image .jodit-ui-group__image{display: none!important;}
+
+  .jodit-toolbar-button button{min-width: 32px !important;
+  max-width: 100% !important;}
+
+ 
+   .jodit-wysiwyg{padding: 0 !important;}
+  .richTextModeWrapper .jodit-wysiwyg,   .richTextModeWrapper .jodit-workplace{
+    min-height: 40px !important;
+  }
+  .DisplayedItem:hover{ 
+transform: scale(1.1);
+ transition: transform 450ms;} 
+
+
+ 
+ .hoverColor #d{
+  border: none;
+  background-color: rgb(232, 234, 237);
+ }
+
+ 
+ 
+
+
+ .fileDisplayWrapper h3{
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+ }
+ .fileDisplayWrapper h3:hover{color: blue;}
+ .fileDisplayWrapper{display: flex;
+justify-content: center;}
+
+.fileName_wrapper span{cursor: pointer;}

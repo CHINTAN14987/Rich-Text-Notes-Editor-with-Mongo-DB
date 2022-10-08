@@ -1,0 +1,99 @@
+.loginContainer {
+  background-color: white;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+.loginContainer button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 20px;
+  border: transparent;
+  cursor: pointer;
+}
+.signup_Error {
+  color: #e50914;
+  text-align: left;
+  width: 100%;
+  margin-top: 0rem;
+  height: 1rem;
+}
+
+.InputBorder__ErrorActive1 {
+  border: 1px solid #e50914 !important;
+  margin-bottom: 0rem !important;
+  margin-top: 1rem;
+}
+
+.InputBorder__ErrorActive2 {
+  border: 1px solid #e50914 !important;
+  margin-bottom: 0rem !important;
+  margin-top: 1rem;
+}
+.loginContainer .title {
+  font-size: 2rem;
+  color: black;
+  text-align: left;
+  width: 100%;
+  font-weight: 700;
+
+  /* margin-top: 5rem; */
+}
+
+.loginContainer .login_Flex_Container {
+  display: flex !important;
+  flex-direction: column;
+  width: 30rem;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.icon_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 8rem;
+  max-width: 100%;
+  margin-top: 1rem;
+  align-items: center;
+}
+.loginContainer .login_Flex_Container .input1 {
+  border: 1px solid #333;
+  /* width: 100%; */
+  padding: 15px 10px;
+  /* border-radius: 4px; */
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.loginContainer .login_Flex_Container .input {
+  border: 1px solid #333;
+  padding: 15px 10px;
+  /* border-radius: 4px; */
+  margin-bottom: 0.5 !important;
+}
+.Login_Link_Title span:hover {
+  text-decoration: underline;
+  color: grey;
+  cursor: pointer;
+}
+
+.Login_Link_Title {
+  cursor: pointer;
+  margin-top: 1rem;
+  color: black;
+  font-weight: 600;
+}
+
+.Login_Link_Title span {
+  color: blue;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+.Login_Link_Title span :hover {
+  color: #333;
+  text-decoration: underline;
+}

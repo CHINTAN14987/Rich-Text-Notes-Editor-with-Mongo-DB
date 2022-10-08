@@ -1,0 +1,52 @@
+{
+  "name": "rich-text-notes",
+  "version": "1.0.0",
+  "description": "### Aim The main Aim of this project is to create a platform similar to Google keep where users can create notes through a rich text editor and can also share the notes with the other users as well, Not only notes user can also share and upload files as well",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "cd ../ && husky install ./frontend/.husky",
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint-front": "lint-staged",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eDelta-Enterprise-Solutions-Pvt-Ltd/rich-text-notes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eDelta-Enterprise-Solutions-Pvt-Ltd/rich-text-notes/issues"
+  },
+  "homepage": "https://github.com/eDelta-Enterprise-Solutions-Pvt-Ltd/rich-text-notes#readme",
+  "devDependencies": {
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.4.1"
+  },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "eslint"
+    ],
+    "*.{json,md,html,js,jsx,ts,tsx}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

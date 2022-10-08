@@ -1,0 +1,28 @@
+.displayedImagePortal {
+  width: 60vw;
+  margin: auto;
+  height: 80vh;
+  /* position: fixed;
+    top: 20%; */
+}
+.displayedImagePreview {
+  height: 100%;
+  width: 100%;
+}
+.cancelButtonPortal {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+}
+.portal_wrapper {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
